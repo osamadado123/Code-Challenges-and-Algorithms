@@ -5,39 +5,27 @@ from challenge01 import Node,LinkedList
 
 def test_del_5():
     llist = LinkedList()
-    llist.append(9)
-    llist.append(1)
-    llist.append(5)
-    llist.append(4)
+    node1 =llist.append(9)
+    node2 =llist.append(1)
+    node3 =llist.append(5)
+    node4 =llist.append(4)
 
-    llist.deleteNode(5)
-    actual = llist.printList()
+    llist.deleteNode(node3)
+    actual = llist.__str__()
 
-    expected = [4,1,9]
+    expected = '{4}{1}{9}'
     assert actual == expected
 
 def test_del_1():
     llist = LinkedList()
-    llist.append(9)
-    llist.append(1)
-    llist.append(5)
-    llist.append(4)
+    node1 =llist.append(9)
+    node2 =llist.append(1)
+    node3 =llist.append(5)
+    node4 =llist.append(4)
 
-    llist.deleteNode(1)
-    actual = llist.printList()
+    llist.deleteNode(node2)
+    actual = llist.__str__()
 
-    expected = [4,5,9]
+    expected = '{4}{5}{9}'
     assert actual == expected
 
-def test_del_9():
-    llist = LinkedList()
-    llist.append(9)
-    llist.append(1)
-    llist.append(5)
-    llist.append(4)
-
-    llist.deleteNode(9)
-    actual = llist.printList()
-
-    expected = [4,5,1]
-    assert actual == expected
