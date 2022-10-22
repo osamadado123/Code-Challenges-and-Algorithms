@@ -68,11 +68,14 @@ class LinkedList:
         Utility function to print the linked LinkedList
         """
 
-
+        x=[]
         temp = self.head
         while(temp):
-            print (" %d" %(temp.data)),
+            print (" %d" %(temp.data))
+            x.append(temp.data)
             temp = temp.next
+        return x
+        
  
 if __name__ == "__main__":
 
