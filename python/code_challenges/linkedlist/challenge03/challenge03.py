@@ -1,5 +1,5 @@
-# Write here the code challenge solution
 class Node:
+    
 	def __init__(self, new_data):
 		self.data = new_data
 		self.next = None
