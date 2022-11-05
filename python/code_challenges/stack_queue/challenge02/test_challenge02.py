@@ -1,5 +1,5 @@
 # Write your test here
-from challenge02brackets import validate_brackets
+from challenge02 import validate_brackets
 def test_1():
     
     expected = True
